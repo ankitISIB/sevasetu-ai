@@ -1,0 +1,17 @@
+district,block,scheme,eligible,received,pending,processing_days,applications,rejected,outreach,latitude,longitude
+Area-01,North Block,Food Support,944,357,318,19.1,832,146,41,24.817,93.9368
+Area-02,Central Block,Health Support,1091,959,25,4.9,665,25,145,24.75,94.05
+Area-03,South Block,Health Support,932,521,217,13.8,828,88,44,24.65,94.1
+Area-04,North Block,Health Support,1177,366,304,22.3,857,154,53,24.55,93.85
+Area-05,Central Block,Education Support,827,583,128,10.3,791,47,89,24.45,93.7
+Area-06,South Block,Housing Support,765,593,50,4.6,673,39,137,24.9,94.25
+Area-07,North Block,Food Support,1257,665,131,15.8,661,58,56,25.05,94.3
+Area-08,Central Block,Health Support,1013,426,335,21.7,882,155,37,24.95,93.75
+Area-09,South Block,Food Support,1107,766,98,11.8,749,48,98,24.35,93.9
+Area-10,North Block,Health Support,798,625,53,6.5,691,32,90,24.6,94.3
+Area-11,Central Block,Health Support,974,514,185,12.9,784,69,61,24.3,94.15
+Area-12,South Block,Food Support,1067,689,121,10.9,756,61,93,24.85,93.65
+Area-13,North Block,Health Support,945,335,217,20.6,767,118,31,25.15,94.05
+Area-14,Central Block,Food Support,892,798,15,4.5,460,14,106,24.4,94.4
+Area-15,South Block,Health Support,1045,569,193,15.3,748,89,60,24.7,93.55
+Area-16,North Block,Education Support,1125,678,64,10.2,600,51,61,25.0,93.95

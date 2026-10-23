@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environment
+venv/
+.env
+.env.*
+
+# Secrets
+*.key
+secrets/
+credentials/
+
+# API keys
+*api_key*
+*API_KEY*
+*token*
+*TOKEN*
+
+# Local database
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+
+# Generated/local files
+.streamlit/secrets.toml
+.DS_Store
+*.log
+
+# Python cache and test artifacts
+**/__pycache__/
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv/
+
+# Backup and temporary files
+app_before_map_integration.py
+app_phase1_backup.py
+src/map_backup.py
+*.bak
