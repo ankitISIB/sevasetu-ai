@@ -73,11 +73,32 @@ def initialize_database():
 def load_welfare_data():
     """
     Load welfare data from SQLite.
+    Create the welfare table from CSV only when it is missing.
     """
 
     conn = get_connection()
 
     try:
+        table = conn.execute(
+            "SELECT name FROM sqlite_master "
+            "WHERE type='table' AND name='welfare_data'"
+        ).fetchone()
+
+        if table is None:
+            if not CSV_PATH.exists():
+                raise FileNotFoundError(
+                    f"Welfare dataset not found: {CSV_PATH}"
+                )
+
+            source_df = pd.read_csv(CSV_PATH)
+            source_df.to_sql(
+                "welfare_data",
+                conn,
+                if_exists="fail",
+                index=False
+            )
+            conn.commit()
+
         df = pd.read_sql_query(
             "SELECT * FROM welfare_data",
             conn
