@@ -59,13 +59,12 @@ def initialize_database():
         )
 
         conn.commit()
-
     finally:
         conn.close()
 
+    create_outreach_table()
+
     return len(df)
-
-
 # ============================================================
 # READ WELFARE DATA
 # ============================================================
