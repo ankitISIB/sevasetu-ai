@@ -10,7 +10,6 @@ from src.analytics import calculate_metrics, area_summary
 from src.anomaly_detection import detect_anomalies
 from src.scoring import calculate_priority_score
 from src.map import create_manipur_map
-from src.database import load_welfare_data, save_ai_investigation, load_ai_investigations
 from src.database import (
     load_welfare_data,
     save_ai_investigation,
@@ -18,8 +17,8 @@ from src.database import (
     load_outreach_candidates,
     approve_outreach_candidate,
     load_intervention_impact,
+    create_ai_investigation_table,
 )
-
 # ============================================================
 # PAGE CONFIGURATION
 # ============================================================
@@ -29,7 +28,8 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
 )
-
+# Ensure the AI investigation history table exists
+create_ai_investigation_table()
 
 # ============================================================
 # CUSTOM CSS / ANIMATIONS
